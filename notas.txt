@@ -1,0 +1,5 @@
+Librerias de js:
+    * jquery: nos permite combinar js con css permtiendonos tener una pagina bien diseñada
+      nos permite añadir animaciones, agregar efectos, logica y dinamismo a nuestros sitios webs 
+    * node.js: nos permite tener js del lado del servidor
+
