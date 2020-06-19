@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // El scope de js busca las variables desde dentro de una funcion puede buscar las variables hacia afuera pero no de afuera hacia dentro
+        // Global
+        var variableGLobal =  "Esta es global";
+        
+        // Para proteger nuestro de codigo de programas de terceros podemos tener una funcion autoinvocada para que el codigo que este afuera no pueda acceder al codio que este adentro pero todo lo que este adentro si pueda acceder al de fuera
+
+        (funcion(){
+            function miFUncion() {
+            // Para definir una variable local ocupamos agregarle la palabra reservada 'var' de otro modo se convertira en una variable global
+            var variableLocal = "Esta es local";
+            alert(variableLocal);
+/*             alert(variableGLobal);
+            variableGLobal = "Esta es Global, modificada"; */
+            }
+
+            miFUncion();
+            // alert(variableGLobal);
+        }())
+
+
+    </script>
+</body>
+</html>

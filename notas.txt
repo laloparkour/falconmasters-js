@@ -1,5 +1,18 @@
 Librerias de js:
-    * jquery: nos permite combinar js con css permtiendonos tener una pagina bien diseñada
-      nos permite añadir animaciones, agregar efectos, logica y dinamismo a nuestros sitios webs 
+    * jquery: nos permite combinar js con css permtiendonos tener una pagina bien diseñada nos permite añadir animaciones, agregar efectos, logica y dinamismo a nuestros sitios webs 
     * node.js: nos permite tener js del lado del servidor
-
+    * Arreglo: es un conjunto de elementos donde no importa el tipo de dato y los cuales podemos almacenar en un solo lugar, es como una variable que puede almacenar multiples valores
+    en javascript los espacios de nuestro arreglo se generan dinamicamente
+    array.length(): nos permite conocer la longuitud de un arreglo
+    array[array.lenght] = "Valor": esta propiedad nos permite agregar dinamicamente un nuevo elemento al final de nuestro areglo
+    array.push("valor], valor, "vallo"): esta propiedad nos permite agregar una lista de elementos al final de un arreglo
+    array.pop(): nos permite eliminar el ultimo elemento
+    array.concat(array_a_concatenar): nos permite concatenar un arreglo con otro
+    array.join(" : "): nos permite obtener los valores de arreglo pero dividido con los caracteres que queramos
+    array.sort(): nos permite ordenar alfabeticamente los datos de nuestro arreglo
+    *condicion: es una sentencia la cual nuestro codigo va poder comar una decicion se cumpla o no sierta condicion
+    el operador === se utiliza para comprobar que las variables tengan el mismo valor y ademas sean del mismo tipo
+    *ciclos: es una estructura que nos permite repetir nuestro codigo X numero de veces
+    *funciones: son fragmentos de codigo que podemos reutilizar cuantas veces queramos y podemos darle un dimanismo para que ejecutan o hagan cosas por nosotros
+    
+    

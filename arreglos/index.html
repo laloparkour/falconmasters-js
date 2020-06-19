@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos</title>
+</head>
+<body>
+    <script>
+        var amigos = ["Carlos", 12, "Isaac", 25];
+        var amigos2 = ["Luis", "Fernando", "Oscar"]
+        
+        /*lenght*/
+        amigos[amigos.length] = "Eduardo";
+        document.write("Tienes " + amigos.length + " amigos");
+        
+        /*pop*/
+        amigos.pop();
+        
+        /*concat*/
+        var amigos3 =  amigos.concat(amigos2);
+        
+        /*join*/
+        document.write(amigos.join(" : "));
+
+        /*sort*/
+        var ordenados = amigos.sort();
+        document.write(ordenados);
+
+    </script>
+</body>
+</html>
