@@ -14,5 +14,7 @@ Librerias de js:
     el operador === se utiliza para comprobar que las variables tengan el mismo valor y ademas sean del mismo tipo
     *ciclos: es una estructura que nos permite repetir nuestro codigo X numero de veces
     *funciones: son fragmentos de codigo que podemos reutilizar cuantas veces queramos y podemos darle un dimanismo para que ejecutan o hagan cosas por nosotros
-    
-    
+    *scope de js: es el que determina la accesibilidad de nuestro codigo, es decir desde donde podemos acceder a nuestras variables.
+    hay dos tipos de scope: el global y el local
+    scope global: podemos acceder a ellas desde cualquier parte del codigo.
+    locales - variables creadas dentro de una funcion y solo pueden ser accedidas a ellas desde su funcion o una funcion anidada.
