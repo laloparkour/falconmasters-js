@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol id="lista">
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem ipsum dolor sit.</li>
+    </ol>
+    <script>
+        var element = document.createElement("li"),
+            content = document.createTextNode("Nuevo Texto");
+        element.appendChild(content);
+        
+        var padre = document.getElementsByTagName("li")[0].parentNode;
+        var primerElemento = document.getElementsByTagName("li")[0];
+        //var padre = document.getElementsById("lista");
+        //padre.appendChild(element); // Nos permite agregar un nodo al final
+        padre.insertBefore(element, primerElemento); //Nos permite agregar un nodo antes del primeor elemento
+
+    </script>
+</body>
+</html>
