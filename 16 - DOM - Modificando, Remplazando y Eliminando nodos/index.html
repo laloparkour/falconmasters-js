@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol id="lista">
+        <li id="primero">Lorem, ipsum dolor.</li>
+        <li>Lorem ipsum dolor sit.</li>
+    </ol>
+
+    <script>
+        // MODIFICAR NODOS
+        // var primerElemento = document.getElementById("primero");
+        // primerElemento.innerHTML = "saludos <i>Laloparkour</i>"; // inneHTML nos permite agregar codigo html al navegador a diferencia de .textContent
+        // primerElemento.textContent = "saludos <i>Laloparkour</i>"; // a diferencia de innerHTML textContent no los mostrara en texto plano y es mas seguro a la hora de trabajar con formularios
+
+        var element = document.createElement("li"),
+            content = document.createTextNode("Nuevo Texto");
+        element.appendChild(content);
+
+        // REMPLAZAR NODOS
+        // var padre = document.getElementsByTagName("li")[0].parentNode,
+        //     referencia = document.getElementsByTagName("li")[0];
+        //el metodo recplaceChild recibe dos parametros uno es el elemento que queremos agregar en el documento y el segundo es el que queremos elimimnar
+        // padre.replaceChild(element, referencia);
+
+        // ELIMINAR ELEMENTOS DEL DOM
+        var padre = document.getElementsByTagName("li")[0].parentNode,
+            referencia = document.getElementsByTagName("li")[0]; 
+        padre.removeChild(referencia); // este metodo ecibe un parametro y es el elemento que queremos eliminar
+
+    </script>
+</body>
+</html>
