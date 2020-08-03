@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificando Estilos de los Elementos</title>
+    <style>
+        .thumb {
+            width: 200px;
+            transition: 300ms all ease;
+        }
+
+        .grande {
+            width: 400px;
+        }
+
+        .titulo {
+            border: 1px solid navy;
+            background: #ccc;
+            padding: 10px;
+        }
+
+        .tituloGrande {
+            font-size: 60px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="encabezado" class="titulo tituloGrande">Soy un encabezado</h1>
+
+    <script>
+        var encabezado = document.getElementById("encabezado");
+        // Con este metodo  nos permite modificar los estilos de nuestro elementos
+        encabezado.style.color =  "navy";
+        encabezado.style.background =  "#fff";
+        encabezado.style.paddingTop =  "20px";
+        encabezado.style.fontFamily =  "20px";
+
+        // Para quitar una clase podemos dejar una solamente
+
+        // Podemos utilizar el metodo replace para quitar una clase, esta recibe dos parametros, son la clase a encontrar y por lo que la cambiaremos
+        encabezado.className = encabezado.className.replace("tituloGrande", "")
+        encabezado.className("titulo");
+    </script>
+</body>
+</html>

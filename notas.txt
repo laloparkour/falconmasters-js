@@ -35,3 +35,4 @@ Librerias de js:
     * El objetivo del dom es poder acceder a los elementos con JS de una manera muy facil.
     * DOM = Document Object Module
     * El DOM es la estructura de nuestro sitio web conformada por elementos que se llaman nodos, y estos elementos principales son el head y el body.
+    
