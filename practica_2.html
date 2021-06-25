@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos del DOM</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background: #087;
+            display: inline-block;
+            margin-right: 10px;
+            border: 1px solid #125833;
+        }
+
+        .azul {
+            background: #0074d9;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="contenedor">
+        <a href="#" id="enlace">Enlace</a>
+        <div id="referencia"></div>
+        <div></div>
+    </section>
+
+    <script>
+        
+        var elemento = document.createElement("div");
+        var padre = document.getElementById("contenedor");
+        var referencia = document.getElementById("referencia");
+        //var referencia = document.getElementsByTagName("div")[0];
+        elemento.setAttribute("class", "azul");
+
+        padre.insertBefore(elemento, referencia);
+
+
+        document.getElementById("enlace").href = "https://www.google.com";
+
+    </script>
+    
+</body>
