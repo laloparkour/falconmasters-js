@@ -2,12 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<<<<<<< HEAD
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <form action="recibe.php" name="formulario" method="get">
         <!-- Explicar Require -->
+=======
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validando Formularios</title>
+</head>
+<body>
+    <form action="" name="formulario" method="GET">
+>>>>>>> 0ccf4e3af1a24ee741ece5e1d2b16e92614887d4
         <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Nombre:">
         <br>
 
@@ -18,14 +27,57 @@
         <input type="checkbox" name="terminos" id="terminos"> Terminos y Condiciones
         <br>
 
+<<<<<<< HEAD
         <input type="submit" name="btn" id="btn" value"Enviar">
+=======
+        <input type="submit" id="btn" name="btn" value="Enviar">
+>>>>>>> 0ccf4e3af1a24ee741ece5e1d2b16e92614887d4
 
     </form>
 
     <script>
         (function(){
+<<<<<<< HEAD
             var formulario = forms
         }())
+=======
+            var formulario = document.getElementsByName('formulario')[0],
+            elementos = formulario.elements, 
+            boton = document.getElementById('btn');
+
+            var validarNombre = function(e){
+                if(formulario.nombre.value == 0) {
+                    alert("Completa el cuadro nombre");
+                    e.preventDefault();
+                }
+            };
+
+            var validarRadio = function(e){
+              if(formulario.sexo[0].checked == true || formulario.sexo[1].checked == true){
+              } else{
+                  alert("Completa el campo sexo");
+                  e.preventDefault();
+              }
+            };
+
+            var validarCheckBox = function(e){
+                if(formulario.terminos.checked == false){
+                    alert("Acepta los terminos");
+                    e.preventDefault();
+                }
+            };
+
+            var validar = function(e){
+                validarNombre(e);
+                validarRadio(e);
+                validarCheckBox(e);
+            };
+
+            formulario.addEventListener("submit", validar)
+
+        }())
+
+>>>>>>> 0ccf4e3af1a24ee741ece5e1d2b16e92614887d4
     </script>
 </body>
 </html>

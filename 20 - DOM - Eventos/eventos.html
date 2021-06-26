@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+    <a id="boton" href="http://www.elpiruetas.com">El Piruetas</a>
+    <button id="boton">Boton</button>
+    <input type="text" id="input">
+
+    <script>
+        /*
+        Existen 3 tipos de de modelos de eventos en JS
+            * Basico
+            * Estandar(Mas usado, es el que tiene soporte en todos los navegadores modernos)
+            * Internet Explorer
+            *
+        */
+
+        (function(){
+            var saludo = function(e){
+                // alert('Saludo');
+                //Saber el tipo de evento
+                // console.log('Este evento es de tipo: ' + e.type);
+                // console.log('Este evento es de tipo: ' + e.target);
+                console.log('Saludos');
+                e.preventDefault();
+                
+            }
+
+            var boton = document.getElementById('boton');
+            boton.addEventListener("click", saludo);
+
+            // var input = document.getElementById('input');
+            // input.addEventListener("focus", saludo);
+
+
+            //Para eliminar un evento
+            //boton.addEventListener("click", saludo);
+
+
+
+
+            /*Ejemplo funcion anonima
+            boton.addEventListener("click", function(){ 
+                console.log('Saludos');
+            }); //Parametros: tipo de evento, tipo de funcion(anonima o normal)
+            */
+        }())
+
+    </script>
+</body>
+</html>
