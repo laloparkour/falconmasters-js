@@ -10,20 +10,23 @@
         var amigos = ["Carlos", 12, "Isaac", 25];
         var amigos2 = ["Luis", "Fernando", "Oscar"]
         
-        /*lenght*/
-        amigos[amigos.length] = "Eduardo";
+        /*lenght - Nos permite saber cuantos elementos tenemos en el arreglo*/
+        amigos[amigos.length] = "Eduardo"; // Añadir elementos al arreglo dinamicamente
         document.write("Tienes " + amigos.length + " amigos");
         
-        /*pop*/
+        /*Push - Nos permite agregar elementos al final de un arreglo*/
+        amigos.push("Manuel", "Eduardo")
+
+        /*pop - Nos permite eliminar el ultimo elemento del arreglo*/
         amigos.pop();
         
-        /*concat*/
+        /*concat - Nos permite unir dos arreglos*/
         var amigos3 =  amigos.concat(amigos2);
         
-        /*join*/
+        /*join - Nos permite obtener el arreglo pero divido con el valor que le pasemos como parametro a la funcion */
         document.write(amigos.join(" : "));
 
-        /*sort*/
+        /*sort - Nos permite ordenar alfabeticamente los elementos del arreglo*/
         var ordenados = amigos.sort();
         document.write(ordenados);
 

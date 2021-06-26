@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#info {
+    width: fif-content;
+    border: thin solid silver;
+    padding: 0.5em;
+    position: fixed;
+}
+
+#info h1 {
+    margin: 0;
+}

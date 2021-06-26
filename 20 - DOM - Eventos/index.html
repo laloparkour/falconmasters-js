@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <button id="boton">Boton</button> -->
+    <a id="boton" href="http://www.falconmasters.com">Falconmasters</a>
+    <input type="text" id="input">
+
+
+    <script>
+        // Funcion anonima
+        
+        // (function(){
+        //     var boton = document.getElementById('boton');
+        //     boton.addEventListener("click", function(){
+        //         console.log("Funciono"); Aqui no es recomendable pasar una funcion anonyma
+        //     });
+        // }())
+        (function(){
+            // Conocer el tipo de evento que estamos ejecutando
+            // var saludo = function(e){
+            //     console.log('Este evento es de tipo: ' + e.type);
+            // }
+
+            // Nos permite conocer el objetivo al que le estamos haciendo el evento
+            // var saludo = function(e){
+            //     console.log('Este evento es de tipo: ' + e.target);
+            // }
+
+            var saludo = function(e){
+                console.log('oh yeah');
+                e.preventDefault();
+            }
+
+            // Podemos prevenir el comportamiento por default de los elementos
+
+            // var saludo2 = function(){
+            //     console.log('saludo2');
+            // }
+
+            var boton = document.getElementById('boton');
+            boton.addEventListener("click", saludo); //Este recibe dos parametros, el evento a ejecutar y la funcion
+            // boton.addEventListener("click", saludo2)
+            
+            // Remover Evento
+            // boton.removeEventListener("click", saludo); //Este recibe dos parametros, el evento a ejecutar y la funcion a eliminar
+
+            // var input = document.getElementById('input');
+            // input.addEventListener("change", saludo);
+
+            // focus: realiza un evento cuando damos clic dentro de un formulario
+            // blur: realiza un evento cuando damos clic fuera de un formulario
+            // change: realiza un evento cuando realizamos un cambio en el input
+        }())
+    </script>
+</body>
+</html>

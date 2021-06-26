@@ -21,7 +21,6 @@ Librerias de js:
     
     > ciclos: es una estructura que nos permite repetir nuestro codigo X numero de veces
     
-    
     > funciones: son fragmentos de codigo que podemos reutilizar cuantas veces queramos y podemos darle un dimanismo para que ejecutan o hagan cosas por nosotros
     
     
@@ -35,4 +34,35 @@ Librerias de js:
     * El objetivo del dom es poder acceder a los elementos con JS de una manera muy facil.
     * DOM = Document Object Module
     * El DOM es la estructura de nuestro sitio web conformada por elementos que se llaman nodos, y estos elementos principales son el head y el body.
-    
+    * Los eventos: son acciones que se van a ejecutar cuando el usuario realiza alguna accion dentro de nuestro sitio web
+    * Hay tres tipos de modelos: 
+      * Modelo de eventos basico 
+      * Modelo de eventos standar
+      * Modelo de eventos de Internet Explorer
+
+    > Formularios
+    * el metodo submit nos permite enviar los datos
+    * el metodo require: es una validacion para los input que nos hace el navegador web mediante html
+    * document.forms: nos permite traer una coleccion de elementos de tipo form como si fuera un formulario document.form[0].elements
+    * document.formulario.name: nos permite conocer el atributo name
+    * document.formulario.nombre.type: nos permite conocer el tipo del input
+    * document.formulario.nombre.focus: nos permite que una vez que estemos en un formulario nos ubique directamente en el para escribir codigo
+
+    El metodo replace(), remplaza una palabra dentro de una cadena por otra
+
+    Ejemplo: 
+      var cadena = "Hola mundo";
+
+      cadena.replace("Hola", "Mundo");
+      
+      En este ejemplo se remplazara la palabra "Mundo" por la palabra "Hola" sin afectar a la cadena original, podriamos almacenar el resultado en otra variable para asi poder mostrarlo
+
+      Podemos utilizar diferentes modificadores
+
+      i: insensitivo: no es sensible a mayuscula y minusculas
+      g: global: debe afectar a todas las palabras que encuentre en la cadena, no solamente a la primera
+      m: multiples lineaS: para que afecte a varias lineas, en caso que hubiesen varias
+
+      Eventos
+
+      onload: te permite ejecutar algo cuando se ejecute el archivo html

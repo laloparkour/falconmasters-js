@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo 17</title>
+</head>
+<body>
+    <form>
+        <label>
+            Solo puedes escribir hasta 100 caracteres
+        </label>
+        <br>
+        <textarea name="parrafo" autofocus="true" placeholder="Escribe aqui" cols="25" rows="6" onkeypress="return limitador(event, this)"></textarea>
+        <br>
+        <label id="t_contador">
+            Te quedan: 100 caracteres
+        </label>
+
+    </form>
+    <noscript>
+        Se necesita activar js
+    </noscript>
+    <script src="assets/js/ejercicio_17.js"></script>
+</body>
+</html>

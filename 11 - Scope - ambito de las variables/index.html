@@ -7,6 +7,9 @@
 </head>
 <body>
     <script>
+        // Global - Podemos acceder a ellas desde cualqueir parte del código.
+        // Local - Variables creadas dentro de  una función, solo pueden ser accedidas desde su funcion o una funcion anidada.
+
         // El scope de js busca las variables desde dentro de una funcion puede buscar las variables hacia afuera pero no de afuera hacia dentro
         // Global
         var variableGLobal =  "Esta es global";
@@ -14,7 +17,7 @@
         // Para proteger nuestro de codigo de programas de terceros podemos tener una funcion autoinvocada para que el codigo que este afuera no pueda acceder al codio que este adentro pero todo lo que este adentro si pueda acceder al de fuera
 
         (funcion(){
-            function miFUncion() {
+            function miFuncion() {
             // Para definir una variable local ocupamos agregarle la palabra reservada 'var' de otro modo se convertira en una variable global
             var variableLocal = "Esta es local";
             alert(variableLocal);
@@ -22,7 +25,7 @@
             variableGLobal = "Esta es Global, modificada"; */
             }
 
-            miFUncion();
+            miFuncion();
             // alert(variableGLobal);
         }())
 
